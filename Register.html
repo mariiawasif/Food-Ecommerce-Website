@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="Register.css">
+    <title>Food on Wheels</title>
+
+    
+</head>
+<body>
+
+    <section id="logo">
+		<a href="#">
+			<img src="pictures/logo3-removebg-preview.png" width="140" height="130" alt="Logo"> 
+		  </a>
+	</section>
+    
+    <header class="header">
+
+        <a class="name">
+            Food on Wheels
+        </a>
+
+        <nav class="navbar">
+          <a class="active" href="#Home">Home</a>
+          <a href="#About">About</a>
+          <a href="#Menu">Menu</a>
+          <a href="#Food Findings">Products</a>
+          <!-- <a href="#Reviews">Reviews</a> -->
+          <a href="#Sign up">Contact</a>
+          <!-- <a href="#Blogs">Blogs</a> -->
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-user" id="user-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div> 
+        </div>  
+        
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+    </header>
+
+
+    <h1 class="registerHeading">Register</h1>
+    <div class="form">
+        <!-- <h1 style="color: rgb(22, 82, 192); font-size: 30px; margin-bottom: 20px;">Request Demo</h1> -->
+        <input type="text" name="name" placeholder="Name"/>
+        <input type="text" name="name" placeholder="Email"/>
+        <input type="text" name="name" placeholder="Password"/>
+        <input type="text" name="name" placeholder="Confirm Password"/>
+        <input type="text" name="name" placeholder="Contact#"/>
+        <input type="text" name="name" placeholder="Address"/>
+        <br/>
+        <a href="Login.html">
+            <input class="butn" type="button" value="Register">
+        </a>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#menu-btn').click(function(){
+                $('.navbar').toggleClass('show');
+        });
+
+    });
+
+    $(document).ready(function(){
+            $('#search-btn').click(function(){
+                $('.search-form').toggleClass('show');
+        });
+
+    });
+    </script>
+</body>
+</html>

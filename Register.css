@@ -213,10 +213,14 @@ section{
     color: var(--main-color);
     text-transform: uppercase;
 }
+.registerHeading{
+    font-size: 3rem;
+}
 
 .form{
-    height: 270px;
+    height: 500px;
     width: 400px;
+    font-size: 5rem;
     background-color: #fff;
     box-shadow: 0px 3px 3px rgba(66,66, 66, 0.3);
     border-radius: 10px;
@@ -224,6 +228,9 @@ section{
     margin-left: 420px;
     z-index: 100;
     margin-bottom: 40px;
+}
+.form input{
+    font-size: 1.5rem;
 }
 .form .butn{
     height: 50px;
@@ -233,7 +240,7 @@ section{
     margin-top: 10px;
     border-radius: 25px;
     border: 1px solid rgb(199, 155, 11);
-    font-size: 10px;
+    font-size: 40%;
     font-weight: bold;
 }
 .form .butn:hover {
@@ -266,14 +273,14 @@ section{
 .form a{
     margin-bottom: 20px;
     /* margin-top: 30px; */
-    font-size: 12px;
+    font-size: 5rem;
     color:rgb(199, 155, 11) ;
 }
 
 h1{
     color:rgb(199, 155, 11) ;
     text-align: center;
-    font-size: 3rem;
+    font-size: 70%;
     margin-top: 5%;
 }
 
