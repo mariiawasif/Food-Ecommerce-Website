@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="homepage.css">
+    <title>Food on Wheels</title>
+
+    
+</head>
+<body>
+
+    <section id="logo">
+		<a href="#">
+			<img src="pictures/logo3-removebg-preview.png" width="140" height="130" alt="Logo"> 
+		  </a>
+	</section>
+    
+    <header class="header">
+
+        <a class="name">
+            Food on Wheels
+        </a>
+
+        <nav class="navbar">
+          <a class="active" href="#Home">Home</a>
+          <a href="#About">About</a>
+          <a href="#Menu">Menu</a>
+          <a href="#Food Findings">Products</a>
+          <!-- <a href="#Reviews">Reviews</a> -->
+          <a href="#Sign up">Contact</a>
+          <!-- <a href="#Blogs">Blogs</a> -->
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-user" id="user-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div> 
+        </div>  
+        
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+    </header>
+
+ 
+
+    <section class="about" id="about">
+        <!-- <h1 class="heading"><span>About</span>  Us</h1> -->
+        <div class="row">
+            <div class="image">
+                <img src="pictures/foodBowl.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Its the food you love, that we deliver</h3>
+                <p>Satisfy your cravings here</p>
+                    <a href="#" class="btn">Explore</a>
+            </div>
+        </div>
+    </section>
+ 
+    <div class="favourite">
+        <h1 class="heading">Favourite Items</h1>
+    </div>
+    
+    <section class="menu" id="menu">
+        <br>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://clipartix.com/wp-content/uploads/2018/03/spaghetti-clipart-2018-2.jpg" alt="">
+                <h3>P I Z Z A</h3>
+                <p>A craving like no other. Treat yourself with one and find yourself craving for more</p> 
+            </div>
+
+            <div class="box">
+                <img src="https://clipartix.com/wp-content/uploads/2017/07/Free-pizza-clipart-1-page-of-clip-art-image-2.jpg" alt="">
+                <h3> B U R G E R</h3>
+                <p>Experience burger heaven with each juicy bite</p>
+                
+            </div>
+
+            <div class="box">
+                <img src="https://clipartix.com/wp-content/uploads/2017/08/Free-food-clipart-pizza-pocket-images.gif" alt="">
+                <h3> P A S T A</h3>
+                <p>Satisfy your pasta cravings with every delicious bite</p>
+                
+            </div>
+            
+
+            
+    </section>
+
+    <div class="favourite">
+        <h1 class="heading">Our Famous Deals</h1>
+    </div>
+
+    <section class="deals" id="deals">
+        <br>
+        <div class="box-container">
+            <div class="box">
+                <img src="pictures/Super combo sandwich hamburger soda post.png" alt="">
+            </div>
+
+            <div class="box">
+                <img src="pictures/Super combo sandwich hamburger soda post (1).png" alt=""> 
+            </div>
+
+            <div class="box">
+                <img src="pictures/Super combo sandwich hamburger soda post (2).png" alt="">
+            </div>
+
+            <div class="box">
+                <img src="pictures/Super combo sandwich hamburger soda post (3).png" alt="">
+            </div>
+
+            <div class="box">
+                <img src="pictures/Super combo sandwich hamburger soda post (4).png" alt="">
+            </div>
+
+            <div class="box">
+                <img src="pictures/Super combo sandwich hamburger soda post (5).png" alt="">
+            </div>
+            
+
+            
+    </section>
+
+    
+    <footer>
+		<div class="footer-content" id="footer">
+		  <p>&copy; 2023 Food on Wheels. All rights reserved.</p>
+		  <ul class="footer-links">
+			<li>Contact us: </li>
+			<li>0309-8599994</li>
+			<li>Location: </li>
+			<li>I-10/3, Street no: 75</li>
+			<li>Islamabad, Pakistan</li>
+
+		  </ul>
+		</div>
+	</footer>
+
+      
+        <!-- <section class="footer">
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+
+            <div class="credit">Created by <span>Eeshah Qamar</span> | All Rights Reserved</div>
+        </section> -->
+
+
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('#menu-btn').click(function(){
+                $('.navbar').toggleClass('show');
+        });
+
+    });
+
+    $(document).ready(function(){
+            $('#search-btn').click(function(){
+                $('.search-form').toggleClass('show');
+        });
+
+    });
+    </script>
+</body>
+</html>
