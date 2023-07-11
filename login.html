@@ -30,9 +30,7 @@
           <a href="#About">About</a>
           <a href="#Menu">Menu</a>
           <a href="#Food Findings">Products</a>
-          <!-- <a href="#Reviews">Reviews</a> -->
           <a href="#Sign up">Contact</a>
-          <!-- <a href="#Blogs">Blogs</a> -->
         </nav>
 
         <div class="icons">
@@ -53,16 +51,18 @@
     <h1>Login</h1>
     <div class="form">
         <!-- <h1 style="color: rgb(22, 82, 192); font-size: 30px; margin-bottom: 20px;">Request Demo</h1> -->
-        <input type="text" name="name" placeholder="Name"/>
-        <input type="text" name="name" placeholder="Email"/>
+        <input type="text" name="name" id="email" placeholder="Email"/>
+        <input type="text" name="name" id="password" placeholder="Password"/>
         <br/>
-        <input class="butn" type="button" value="Log in">
+        <input class="butn" type="button" value="Log in" >
         <!-- <p>Dont have an account? </p> -->
         <br>
         <a href="Register.html" class="register">
            Dont have an account? Click here!
         </a>
+        <button onclick="myalert()">Register</button>
     </div>
+
 
     <script>
         $(document).ready(function(){
@@ -78,6 +78,11 @@
         });
 
     });
+
+    function myalert(){
+        alert('You must Register first first!')
+    }
     </script>
+    <script src="login.js"></script>
 </body>
 </html>
