@@ -68,10 +68,6 @@ body{
    
 }
 
-.register{
-    margin-top: 20%;
-}
-
 .header .navbar a{
     margin: 0 1rem;
     font-size: 1.6rem;
@@ -225,6 +221,12 @@ section{
     z-index: 100;
     margin-bottom: 40px;
 }
+
+.form .click {
+    font-size: 1.25rem;
+    
+}
+
 .form .butn{
     height: 50px;
     width: 120px;

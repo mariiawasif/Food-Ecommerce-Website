@@ -718,7 +718,13 @@ footer {
         gap: 2rem;
         justify-self: center;
         margin-left: 10%;
+    }
+    .about .row .content h3{
+        margin-left: 10%;
     } 
+    .about .row .content p{
+        margin-left: 17%;
+    }
 }
 
 
