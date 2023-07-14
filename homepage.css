@@ -717,13 +717,16 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
         justify-self: center;
-        margin-left: 10%;
+        margin-left: 6.9%;
     }
     .about .row .content h3{
         margin-left: 10%;
     } 
     .about .row .content p{
         margin-left: 17%;
+    }
+    .deals .box-container .box{
+        margin-left: 3.5%;
     }
 }
 
