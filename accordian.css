@@ -19,12 +19,6 @@
     overflow-x: hidden;
 }
 
-
-#logo {
-    justify-content: center;
-    text-align: center;
- }
-
 html{
     font-size: 62.5%;
     /* scroll-behavior: smooth;
@@ -35,6 +29,8 @@ html{
 
 body{
     background: var(--bg);
+    justify-content: center;
+    align-items: center;
 }
 
 .header{
@@ -122,107 +118,70 @@ color:rgb(193, 193, 193);
     color: var(--main-color);
 }
 
-.form{
-    height: 300px;
-    width: 400px;
-    background-color: #fff;
-    /* box-shadow: 0px 3px 3px rgba(66,66, 66, 0.3); */
-    border-radius: 10px;
-    text-align: center;
-    margin-left: 420px;
-    /* z-index: 100; */
-    margin-bottom: 40px;
-}
-
-.form .click {
-    font-size: 1.25rem;
-}
-
-.form .butn{
-    height: 15%;
-    width: 120px;
+ .accordian{
+    margin: 0 auto; /* Centers the element horizontally */
+    align-items: center;
+    margin-top: 2%;
+    width: 65%;
     background-color: rgb(199, 155, 11);
-    color: #ffffff;
-    margin-top: 1%;
-    border-radius: 25px;
-    border: 1px solid rgb(199, 155, 11);
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 3%;
-}
-.form .butn:hover {
-    background-color: #ffffff;
-     border-radius: 25px;
-    border-color: rgb(199, 155, 11);
-    color: rgb(199, 155, 11);
-  } 
-[type="text"]{
-    width: 80%;
-    height: 50px;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 1px solid #000;
+    padding: 30px;
+    border-radius: 30px;
+    color: rgb(47, 44, 44);
 
-}
-[type="password"]{
-    width: 80%;
-    height: 50px;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 1px solid #000;
+ }
 
-}
-@keyframes SlidefromRight {
-    0%{
-        transform:translateY(100%);
-    }
-    100%{
-        transform:translateY(0%);
-    }
-    
-}
-.form{
-    animation: SlidefromRight 1s ease-in;
-}
-
-.form a{
-    margin-bottom: 20px;
-    /* margin-top: 30px; */
-    font-size: 12px;
-    color:rgb(199, 155, 11) ;
-}
-
-h1{
-    color:rgb(199, 155, 11) ;
+ .accordian .accordian-title{
+    margin-bottom: 5%;
     text-align: center;
-    font-size: 3rem;
-    margin-top: 5%;
-}
+    font-size: 2.5rem;
+ }
+
+ .accordian .content-container .question{
+    padding: 1.5rem 0rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    position: relative;
+
+ }
+
+ .accordian .content-container .question::after{
+    content: '+';
+
+    position: absolute;
+    right: -0.025px;
+ }
+
+ .accordian .content-container .answer {
+    padding-top: 15px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    width: 100%;
+
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+ }
+
+ .accordian .content-container.active .answer{
+    height: 60%;
+    font-size: 1.5rem;
+
+ }
+ .accordian .content-container.active .question{
+    font-size: 18px;
+    transition: .5s;
+ }
+ .accordian .content-container.active .question::after{
+    content: '-';
+    font-size: 2rem;
+    transition: .5s;
+ }
 
 
-@media (max-width:991px){
+/* For navbar */
 
-    html{
-        font-size: 55%;
-    }
-
-    .header{
-        padding: 1.5rem 2rem;
-    }
-
-    section{
-        padding: 2rem;
-    }
-
-    section{
-        padding: 2rem;
-    }
-   
-
-}
-
-
-
+ 
 @media (max-width:767px){
 
     .icons #menu-btn{
@@ -271,44 +230,43 @@ h1{
         right: 2rem;
     }
 }
-@media (max-width: 450px) {
-    html {
-        font-size: 50%;
+/* media queries */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
     }
 
-    .form {
-        width: 120rem;
-        height: 40rem;
-        /* width: 220px;
-        margin-left: auto;
-        margin-right: auto; */
+    .header{
+        padding: 1.5rem 2rem;
     }
-    .form input{
-        width: 60rem;
+
+    section{
+        padding: 2rem;
     }
+
+    section{
+        padding: 2rem;
+    }
+   
+
 }
 
-
-@media (max-width: 480px) {
-    .form {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .form {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (max-width: 1440px) {
-    .form {
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
-    }
-}
+  
+  /* Mobile (L) styles */
+  @media (max-width: 1200px) {
+    .accordian{
+        width: 94%;
+        margin-top: 8.5rem;
+       }
+  }
+   
+  /* Mobile (S) styles */
+  @media (max-width: 768px) {
+   .accordian{
+    width: 94%;
+    margin-top: 7rem;
+   }
+  }
+  
+  

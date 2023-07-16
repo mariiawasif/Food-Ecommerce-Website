@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="login.css">
@@ -50,39 +50,17 @@
 
     <h1>Login</h1>
     <div class="form">
-        <!-- <h1 style="color: rgb(22, 82, 192); font-size: 30px; margin-bottom: 20px;">Request Demo</h1> -->
-        <input type="text" name="name" id="email" placeholder="Email"/>
-        <input type="text" name="name" id="password" placeholder="Password"/>
+        <input type="text" name="name" id="email" placeholder="Email" autocomplete="email"/>
+        <input type="password" name="password" id="password" placeholder="Password" autocomplete="current-password"/>
         <br/>
-        <input class="butn" type="button" value="Log in" >
-        <!-- <p>Dont have an account? </p> -->
+        <input class="butn" id="loginButton" type="button" value="Log in"  />
         <br>
         <a href="Register.html" class="click">
-           Dont have an account? Click here!
+           Don't have an account? Click here!
         </a>
         <button onclick="myalert()">Register</button>
     </div>
-
-
-    <script>
-        $(document).ready(function(){
-            $('#menu-btn').click(function(){
-                $('.navbar').toggleClass('show');
-        });
-
-    });
-
-    $(document).ready(function(){
-            $('#search-btn').click(function(){
-                $('.search-form').toggleClass('show');
-        });
-
-    });
-
-    function myalert(){
-        alert('You must Register first!')
-    }
-    </script>
+    
     <script src="login.js"></script>
 </body>
 </html>

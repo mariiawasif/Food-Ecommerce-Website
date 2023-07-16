@@ -76,8 +76,8 @@ body{
 
 .header .navbar a:active,
 .header .navbar a:hover{
-    color: var(--main-color);
-    border-bottom: .1rem solid var(--main-color);
+    color: white;
+    border-bottom: .1rem solid white;
     padding-bottom: .5rem;
 }
 
@@ -131,7 +131,7 @@ color:rgb(193, 193, 193);
 }
 
 .header .search-form label:hover{
-    color: var(--main-color);
+    color: white;
 }
 
 .home{
@@ -261,8 +261,7 @@ section{
     background-color: rgb(199, 155, 11);
     margin-top: 2rem;
     border-radius: 50px;
-    align-content: center;
-}
+    align-content: center;}
 
 .menu .box-container{
     display: grid;
@@ -446,30 +445,6 @@ footer {
   .footer-links li a:hover {
     color: #ffffff;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -767,6 +742,37 @@ footer {
 
 }    
 
+/* 4K-2560K queries */
+@media (min-width: 2561px) and (max-width: 3840px) {
+    /* .about .row .image img{
+        margin-left: 10%;
+    } */
+    .about .row  p{
+        margin-left: 90%;
+        
+    }
+ 
+}
+
+
+@media (min-width: 2305px) and (max-width: 2560px) {
+    .about .row .image img{
+        margin-left: 20%;
+    }
+    .about .row  h3{
+        margin-left: 0%;
+        padding: 6rem;
+        overflow: hidden; 
+    }
+    .about .row  p{
+        margin-left: auto;
+        padding: 10rem;
+    }
+   
+   
+}
+
+/* laptop queries */
 @media (min-width: 1367px) and (max-width: 1440px) {
     .menu .box-container{
         display: grid;
@@ -775,6 +781,18 @@ footer {
         justify-self: center;
         margin-left: 10%;
     } 
+    .about .row .image img{
+        margin-left: 10%;
+    }
+    .about .row .content h3{
+         margin-left: 20%;
+    }
+    .about .row .content p{
+        margin-left: 30%;
+   }
+   .about .row .content .btn{
+    margin-left: 45%;
+}
 }
 
 @media (min-width: 2305px) and (max-width: 2560px) {

@@ -222,7 +222,6 @@ section{
     height: 75rem;
     width: 80%;
     background-color: #fff;
-    box-shadow: 0px 3px 3px rgba(66, 66, 66, 0.3);
     border-radius: 10px;
     text-align: center;
     margin-left: auto;
@@ -375,7 +374,12 @@ h1{
     .header .search-form{
         width: 90%;
         right: 2rem;
+    } 
+    .form{
+        margin: 0;
+        padding: 0;
     }
+
 }
 @media (max-width: 450px) {
     html {
