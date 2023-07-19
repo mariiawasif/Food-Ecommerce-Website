@@ -7,7 +7,7 @@ $(document).ready(function() {
         $('.search-form').toggleClass('show');
     });
 
-    const registeredUsers=[];
+    // const registeredUsers=[];
     $('#registerButton').click(function() {
         var name = $('#name').val().trim();
         var email = $('#email').val().trim();
@@ -55,9 +55,14 @@ $(document).ready(function() {
         var registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
         registeredUsers.push({ name: name, email: email, password: password, contact: contact, address: address });
         localStorage.setItem('registeredUsers', JSON.stringify(registeredUsers));
-        window.location.href = 'login.html';
-        return true;
 
+        
+        
+        window.location.href = 'login.html';
+
+        return true;
+       
+        
         
     });
 });

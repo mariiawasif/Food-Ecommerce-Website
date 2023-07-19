@@ -64,8 +64,8 @@ body{
 
 .header .navbar a:active,
 .header .navbar a:hover{
-    color: var(--main-color);
-    border-bottom: .1rem solid var(--main-color);
+    color: white;
+    border-bottom: .1rem solid var(--white);
     padding-bottom: .5rem;
 }
 
